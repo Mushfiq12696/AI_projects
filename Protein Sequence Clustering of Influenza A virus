@@ -1,0 +1,24 @@
+#Importing All the files#
+import numpy as np
+import matplotlib.pyplot as plt
+import io
+import pandas as pd
+import matplotlib as mpl
+import itertools
+import seaborn as sns
+%matplotlib inline
+
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+from yellowbrick.cluster import SilhouetteVisualizer
+
+
+import sgt
+sgt.__version__
+from sgt import SGT
+
+//reading the dataset as fasta format
+import fasta2csv.converter
+data=fasta2csv.converter.convert("/content/FASTA2.fa","new_data1.csv")
+
+//
